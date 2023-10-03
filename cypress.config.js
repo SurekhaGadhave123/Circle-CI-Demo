@@ -24,7 +24,8 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
       // allureWriter(on, config);
       return config;
-    }
+    },
+    specPattern: 'cypress/e2etests/**/*.cy.{js,jsx,ts,tsx}'
   }
 });
 
