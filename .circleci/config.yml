@@ -12,7 +12,7 @@ jobs:
           command: npm install
       - run:
           name: Run Cypress Tests
-          command: npm run cypress:run # Replace with your actual test script name
+          command: npx cypress run # Replace with your actual test script name
 
 workflows:
   version: 2
