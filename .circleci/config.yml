@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cypress/base:14
+    working_directory: https://github.com/SurekhaGadhave123/Circle-CI-Demo.git
+    steps:
+      - checkout # Check out your source code from your VCS (e.g., GitHub, Bitbucket)
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Cypress Tests
+          command: npm run cypress:run # Replace with your actual test script name
+
+workflows:
+  version: 2
+  build-now:
+    jobs:
+      - build
