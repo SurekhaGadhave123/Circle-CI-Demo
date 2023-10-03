@@ -4,7 +4,7 @@ jobs:
   test:
     docker:
       - image: cypress/base:14
-    working_directory: https://github.com/SurekhaGadhave123/Circle-CI-Demo.git
+#    working_directory: https://github.com/SurekhaGadhave123/Circle-CI-Demo.git/cypress/admin
     steps:
       - checkout # Check out your source code from your VCS (e.g., GitHub, Bitbucket)
       - run:
