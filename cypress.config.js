@@ -25,7 +25,7 @@ module.exports = defineConfig({
       // allureWriter(on, config);
       return config;
     },
-    specPattern: 'cypress/e2etests/**/*.cy.{js,jsx,ts,tsx}'
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
   }
 });
 
